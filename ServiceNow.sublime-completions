@@ -1,0 +1,457 @@
+{
+	/**
+   * ServiceNow API auto-completion for Subline Text 3
+   * @author    Daniel Cigrang
+   * {"trigger": "", "contents": ""}
+   */
+
+	"scope": "source.js - string, source.coffee, source.js.embedded.html",
+
+	"version": "1.0.0",
+
+	"completions": [
+
+		/* GlideAggregate */ 
+
+		{"trigger": "GlideAggregate\t<GlideAggregate>", "contents": "GlideAggregate(${0:String tableName});"},
+		{"trigger": "addAggregate\t:GlideAggregate (agg, name)", "contents": "addAggregate(${1:String agg}, ${0:String name});"},
+		{"trigger": "addEncodedQuery\t:GlideAggregate (query)", "contents": "addEncodedQuery(${1:String query});"},
+		{"trigger": "addNotNullQuery\t:GlideAggregate (fieldName)", "contents": "addNotNullQuery(${1:String fieldName});"},
+		{"trigger": "addNullQuery\t:GlideAggregate (fieldName)", "contents": "addNullQuery(${1:String fieldName});"},
+		{"trigger": "addQuery\t:GlideAggregate (name, operator, value)", "contents": "addQuery(${1:String name}, ${2:String operator}, ${3:String value});"},
+		{"trigger": "getAggregate\t:GlideAggregate (agg, name)", "contents": "getAggregate(${1:String agg}, ${2:String name});"},
+		{"trigger": "getAggregateEncodedQuery\t:GlideAggregate", "contents": "getAggregateEncodedQuery();"},
+		{"trigger": "getEncodedQuery\t:GlideAggregate", "contents": "getEncodedQuery();"},
+		{"trigger": "getRowCount\t:GlideAggregate", "contents": "getRowCount();"},
+		{"trigger": "getTableName\t:GlideAggregate", "contents": "getTableName();"},
+		{"trigger": "getValue\t:GlideAggregate (name)", "contents": "getValue(${1:String name});"},
+		{"trigger": "groupBy\t:GlideAggregate (name)", "contents": "groupBy(${1:String name});"},
+		{"trigger": "hasNext\t:GlideAggregate", "contents": "hasNext();"},
+		{"trigger": "next\t:GlideAggregate", "contents": "next();"},
+		{"trigger": "orderBy\t:GlideAggregate", "contents": "orderBy();"},
+		{"trigger": "orderByAggregate\t:GlideAggregate (agg, fieldName)", "contents": "orderByAggregate(${1:String agg}, ${2:String fieldName});"},
+		{"trigger": "orderByDesc\t:GlideAggregate (name)", "contents": "orderByDesc(${1:String name});"},
+		{"trigger": "query\t:GlideAggregate", "contents": "query();"},
+		{"trigger": "setGroup\t:GlideAggregate (b)", "contents": "setGroup(${1:Boolean b});"},
+
+		/* name of aggregate 'agg' */
+
+		"COUNT",
+		"MIN",
+		"MAX",
+
+		/* GlideDate */ 
+
+		{"trigger": "GlideDate\t<GlideDate>", "contents": "GlideDate();"},
+		{"trigger": "getByFormat\t:GlideDate (format)", "contents": "getByFormat(${1:String format});"},
+		{"trigger": "getDisplayValue\t:GlideDate", "contents": "getDisplayValue();"},
+		{"trigger": "getDisplayValueInternal\t:GlideDate", "contents": "getDisplayValueInternal();"},
+		{"trigger": "getValue\t:GlideDate", "contents": "getValue();"},
+		{"trigger": "setDisplayValue\t:GlideDate (asDisplayed)", "contents": "setDisplayValue(${1:String asDisplayed});"},
+		{"trigger": "setValue\t:GlideDate (o)", "contents": "setValue(${1:String o});"},
+		{"trigger": "subtract\t:GlideDate (start, end)", "contents": "subtract(${1:GlideDate start}, ${2:GlideDate end})"},
+
+		/* GlideDateTime */
+
+		{"trigger": "GlideDateTime\t<GlideDateTime>", "contents": "GlideDateTime();"},
+		{"trigger": "GlideDateTime\t:GlideDateTime (g)", "contents": "GlideDateTime(${1:GlideDateTime g});"},
+		{"trigger": "GlideDateTime\t:GlideDateTime (value)", "contents": "GlideDateTime(${1:String value});"},
+		{"trigger": "add\t:GlideDateTime (gd)", "contents": "add(${1:GlideTime gd});"},
+		{"trigger": "add\t:GlideDateTime (milliseconds)", "contents": "add(${1:Number milliseconds});"},
+		{"trigger": "addDaysLocalTime\t:GlideDateTime (days)", "contents": "addDaysLocalTime(${1:Number days});"},
+		{"trigger": "addDaysUTC\t:GlideDateTime (days)", "contents": "addDaysUTC(${1:Number days});"},
+		{"trigger": "addMonthsLocalTime\t:GlideDateTime (months)", "contents": "addDaysUTC(${1:Number months});"},
+		{"trigger": "addMonthsUTC\t:GlideDateTime (months)", "contents": "addMonthsUTC(${1:Number months});"},
+		{"trigger": "addSeconds\t:GlideDateTime (seconds)", "contents": "addSeconds(${1:Number seconds});"},
+		{"trigger": "addWeeksLocalTime\t:GlideDateTime (weeks)", "contents": "addWeeksLocalTime(${1:Number weeks});"},
+		{"trigger": "addWeeksUTC\t:GlideDateTime (weeks)", "contents": "addWeeksUTC(${1:Number weeks});"},
+		{"trigger": "addYearsLocalTime\t:GlideDateTime (years)", "contents": "addYearsLocalTime(${1:Number years});"},
+		{"trigger": "addYearsUTC\t:GlideDateTime (years)", "contents": "addYearsUTC(${1:Number years});"},
+		{"trigger": "compareTo\t:GlideDateTime (o)", "contents": "compareTo(${1:Object o});"},
+		{"trigger": "equals\t:GlideDateTime (dateTime)", "contents": "equals(${1:Object dateTime});"},
+		{"trigger": "getDate\t:GlideDateTime", "contents": "getDate();"},
+		{"trigger": "getDayOfMonthLocalTime\t:GlideDateTime", "contents": "getDayOfMonthLocalTime();"},
+		{"trigger": "getDayOfMonthUTC\t:GlideDateTime", "contents": "getDayOfMonthUTC();"},
+		{"trigger": "getDayOfWeekLocalTime\t:GlideDateTime", "contents": "getDayOfWeekLocalTime();"},
+		{"trigger": "getDayOfWeekUTC\t:GlideDateTime", "contents": "getDayOfWeekUTC();"},
+		{"trigger": "getDaysInMonthLocalTime\t:GlideDateTime", "contents": "getDaysInMonthLocalTime();"},
+		{"trigger": "getDaysInMonthUTC\t:GlideDateTime", "contents": "getDaysInMonthUTC();"},
+		{"trigger": "getDisplayValue\t:GlideDateTime", "contents": "getDisplayValue();"},
+		{"trigger": "getDisplayValueInternal\t:GlideDateTime", "contents": "getDisplayValueInternal();"},
+		{"trigger": "getDSTOffset\t:GlideDateTime", "contents": "getDSTOffset();"},
+		{"trigger": "getErrorMsg\t:GlideDateTime", "contents": "getErrorMsg();"},
+		{"trigger": "getLocalDate\t:GlideDateTime", "contents": "getLocalDate();"},
+		{"trigger": "getLocalTime\t:GlideDateTime", "contents": "getLocalTime();"},
+		{"trigger": "getMonthLocalTime\t:GlideDateTime", "contents": "getMonthLocalTime();"},
+		{"trigger": "getMonthUTC\t:GlideDateTime", "contents": "getMonthUTC();"},
+		{"trigger": "getNumericValue\t:GlideDateTime", "contents": "getNumericValue();"},
+		{"trigger": "getTime\t:GlideDateTime", "contents": "getTime();"},
+		{"trigger": "getTZOffset\t:GlideDateTime", "contents": "getTZOffset();"},
+		{"trigger": "getValue\t:GlideDateTime", "contents": "getValue();"},
+		{"trigger": "getWeekOfYearLocalTime\t:GlideDateTime", "contents": "getWeekOfYearLocalTime();"},
+		{"trigger": "getWeekOfYearUTC\t:GlideDateTime", "contents": "getWeekOfYearUTC();"},
+		{"trigger": "getYearLocalTime\t:glidedatetime", "contents": "getYearLocalTime();"},
+		{"trigger": "getYearUTC\t:GlideDateTime", "contents": "getYearUTC();"},
+		{"trigger": "hasDate\t:GlideDateTime", "contents": "hasDate();"},
+		{"trigger": "isDST\t:GlideDateTime", "contents": "isDST();"},
+		{"trigger": "isValid\t:GlideDateTime", "contents": "isValid();"},
+		{"trigger": "setDayOfMonthLocalTime\t:GlideDateTime (day)", "contents": "setDayOfMonthLocalTime(${1:Number day});"},
+		{"trigger": "setDayOfMonthUTC\t:GlideDateTime (day)", "contents": "setDayOfMonthUTC(${1:Number day});"},
+		{"trigger": "setDisplayValue\t:GlideDateTime (asDisplayed)", "contents": "setDisplayValue(${1:String asDisplayed});"},
+		{"trigger": "setDisplayValue\t:GlideDateTime (asDisplayed, format)", "contents": "setDisplayValue(${1:String asDisplayed}, ${2:String format});"},
+		{"trigger": "setDisplayValueInternal\t:GlideDateTime (value)", "contents": "setDisplayValueInternal(${1:String value});"},
+		{"trigger": "setGlideDateTime\t:GlideDateTime (g)", "contents": "setGlideDateTime(${1:GlideDateTime g});"},
+		{"trigger": "setMonthLocalTime\t:GlideDateTime (month)", "contents": "setMonthLocalTime(${1:Number month});"},
+		{"trigger": "setMonthUTC\t:GlideDateTime (month)", "contents": "setMonthUTC(${1:Number month});"},
+		{"trigger": "setValue\t:GlideDateTime (o)", "contents": "setValue(${1:String o});"},
+		{"trigger": "setValueUTC\t:GlideDateTime (dt, format)", "contents": "setValueUTC(${1:String dt}, ${2:String format})"},
+		{"trigger": "setYearLocalTime\t:GlideDateTime (year)", "contents": "setYearLocalTime(${1:Number year});"},
+		{"trigger": "setYearUTC\t:GlideDateTime (year)", "contents": "setYearUTC(${1:Number year});"},
+		{"trigger": "subtract\t:GlideDateTime (start, end)", "contents": "subtract(${1:GlideDateTime start}, ${GlideDateTime end});"},
+		{"trigger": "subtract\t:GlideDateTime (time)", "contents": "subtract(${1:GlideTime time});"},
+		{"trigger": "subtract\t:GlideDateTime (milliseconds)", "contents": "subtract(${1:Number milliseconds});"},
+		{"trigger": "toString\t:GlideDateTime", "contents": "toString();"},
+
+		/* GlideDuration */
+
+		{"trigger": "GlideDuration\t<GlideDuration>", "contents": "GlideDuration()"},
+		{"trigger": "GlideDuration\t:GlideDuration (another)", "contents": "GlideDuration(${1:GlideDuration another})"},
+		{"trigger": "GlideDuration\t:GlideDuration (milliseconds)", "contents": "GlideDuration(${1:Number milliseconds})"},
+		{"trigger": "GlideDuration\t:GlideDuration (displayValue)", "contents": "GlideDuration(${1:String displayValue})"},
+		{"trigger": "add\t:GlideDuration (duration)", "contents": "add(${1:GlideDuration duration})"},
+		{"trigger": "getByFormat\t:GlideDuration (format)", "contents": "getByFormat(${1:String format})"},
+		{"trigger": "getDayPart\t:GlideDuration", "contents": "getDayPart()"},
+		{"trigger": "getDisplayValue\t:GlideDuration", "contents": "getDisplayValue()"},
+		{"trigger": "getDurationValue\t:GlideDuration", "contents": "getDurationValue()"},
+		{"trigger": "getRoundedDayPart\t:GlideDuration", "contents": "getRoundedDayPart()"},
+		{"trigger": "getValue\t:GlideDuration", "contents": "getValue()"},
+		{"trigger": "setDisplayValue\t:GlideDuration (asDisplayed)", "contents": "setDisplayValue(${1:String asDisplayed})"},
+		{"trigger": "setValue\t:GlideDuration (o)", "contents": "setValue(${1:Object o})"},
+		{"trigger": "subtract\t:GlideDuration (duration)", "contents": "subtract(${1:GlideDuration duration})"},
+
+		/* GlideElement */ 
+
+		{"trigger": "changes\t:GlideElement", "contents": "changes()"},
+		{"trigger": "changesFrom\t:GlideElement (o)", "contents": "changesFrom(${1:Object o})"},
+		{"trigger": "changesTo\t:GlideElement (o)", "contents": "changesTo(${1:Object o})"},
+		{"trigger": "getChoices\t:GlideElement (dependent)", "contents": "getChoices(${1:String dependent})"},
+		{"trigger": "getDisplayValue\t:GlideElement (maxCharacters)", "contents": "getDisplayValue(${1:Number maxCharacters})"},
+		{"trigger": "getED\t:GlideElement", "contents": "getED()"},
+		{"trigger": "getReferenceTable\t:GlideElement", "contents": "getReferenceTable()"},
+		{"trigger": "getRefRecord\t:GlideElement", "contents": "getRefRecord()"},
+		{"trigger": "nil\t:GlideElement", "contents": "nil()"},
+		{"trigger": "setDisplayValue\t:GlideElement (value)", "contents": "setDisplayValue(${1:Object value})"},
+		{"trigger": "setError\t:GlideElement (errorMessage)", "contents": "setError(${1:String errorMessage})"},
+		{"trigger": "setValue\t:GlideElement (value)", "contents": "setValue(${1:Object value})"},
+		{"trigger": "toString\t:GlideElement", "contents": "toString()"},
+
+		/* GlideElementDescriptor */
+
+		{"trigger": "getInternalType\t:GlideElementDescriptor", "contents": "getInternalType()"},
+		{"trigger": "getLabel\t:GlideElementDescriptor", "contents": "getLabel()"},
+		{"trigger": "getLength\t:GlideElementDescriptor", "contents": "getLength()"},
+		{"trigger": "getName\t:GlideElementDescriptor", "contents": "getName()"},
+
+		/* GlideEvaluator */
+
+		{"trigger": "GlideScopedEvaluator\t:GlideEvaluator", "contents": "GlideScopedEvaluator()"},
+		{"trigger": "evaluateScript\t:GlideEvaluator (grObj, scriptField, variables)", "contents": "evaluateScript(${1:GlideRecord grObj}, ${2:String scriptField}, ${3:Object variables})"},
+		{"trigger": "getVariable\t:GlideEvaluator (name)", "contents": "getVariable(${1:String name})"},
+		{"trigger": "putVariable\t:GlideEvaluator (name, value)", "contents": "putVariable(${1:String name}, ${2:Object value})"},
+
+		/* GlideFilter */
+
+		{"trigger": "checkRecord\t:GlideFilter (gr, filter, matchAll)", "contents": "checkRecord(${1:GlideRecord gr}, ${2:String filter}, ${3:Object matchAll})"},
+
+		/* GlideLocale */
+
+		{"trigger": "get\t:GlideLocale", "contents": "get()"},
+		{"trigger": "getDecimalSeparator\t:GlideLocale", "contents": "getDecimalSeparator()"},
+		{"trigger": "getGroupingSeparator\t:GlideLocale", "contents": "getGroupingSeparator()"},
+
+		/* GlideQueryCondition */
+
+		{"trigger": "addCondition\t:GlideQueryCondition", "contents": "addCondition(${1:String name}, ${2:String oper}, ${3:Object value})"},
+		{"trigger": "addOrCondition\t:GlideQueryCondition", "contents": "addOrCondition(${1:String name}, ${2:String oper}, ${3:Object value})"},
+
+		/* GlideRecord */
+
+		{"trigger": "GlideRecord\t<GlideRecord>", "contents": "GlideRecord(${String tableName});"},
+		{"trigger": "addEncodedQuery\t:GlideRecord (query)", "contents": "addEncodedQuery(${1:String query})"},
+		{"trigger": "addJoinQuery\t:GlideRecord (joinTable, primaryField, joinTableField)", "contents": "addJoinQuery(${1:String joinTable}, ${2:Object primaryField}, ${3:Object joinTableField})"},
+		{"trigger": "addNotNullQuery\t:GlideRecord (fieldName)", "contents": "addNotNullQuery(${1:String fieldName})"},
+		{"trigger": "addNullQuery\t:GlideRecord (fieldName)", "contents": "addNullQuery(${1:String fieldName})"},
+		{"trigger": "addQuery\t:GlideRecord (name, value)", "contents": "addQuery(${1:String name}, ${2:Object value})"},
+		{"trigger": "addQuery\t:GlideRecord (name, operator, value)", "contents": "addQuery(${1:String name}, ${2:String operator}, ${3:Object value})"},
+		{"trigger": "canCreate\t:GlideRecord", "contents": "canCreate()"},
+		{"trigger": "canDelete\t:GlideRecord", "contents": "canDelete()"},
+		{"trigger": "canRead\t:GlideRecord", "contents": "canRead()"},
+		{"trigger": "canWrite\t:GlideRecord", "contents": "canWrite()"},
+		{"trigger": "chooseWindow\t:GlideRecord (firstRow, lastRow, forceCount)", "contents": "chooseWindow(${1:Number firstRow}, ${2:Number lastRow}, ${3:Boolean forceCount})"},
+		{"trigger": "deleteMultiple\t:GlideRecord", "contents": "deleteMultiple()"},
+		{"trigger": "deleteRecord\t:GlideRecord", "contents": "deleteRecord()"},
+		{"trigger": "get\t:GlideRecord (name, value)", "contents": "get(${1:Object name}, ${2:Object value})"},
+		{"trigger": "getDisplayValue\t:GlideRecord", "contents": "getDisplayValue()"},
+		{"trigger": "getElement\t:GlideRecord (columnName)", "contents": "getElement(${1:String columnName})"},
+		{"trigger": "getEncodedQuery\t:GlideRecord", "contents": "getEncodedQuery()"},
+		{"trigger": "getLastErrorMessage\t:GlideRecord", "contents": "getLastErrorMessage()"},
+		{"trigger": "getLink\t:GlideRecord", "contents": "getLink(${:Boolean noStack})"},
+		{"trigger": "getRecordClassName\t:GlideRecord", "contents": "getRecordClassName()"},
+		{"trigger": "getRowCount\t:GlideRecord", "contents": "getRowCount()"},
+		{"trigger": "getTableName\t:GlideRecord", "contents": "getTableName()"},
+		{"trigger": "getUniqueValue\t:GlideRecord", "contents": "getUniqueValue()"},
+		{"trigger": "getValue\t:GlideRecord (name)", "contents": "getValue(${1:String name})"},
+		{"trigger": "hasNext\t:GlideRecord", "contents": "hasNext()"},
+		{"trigger": "initialize\t:GlideRecord", "contents": "initialize()"},
+		{"trigger": "insert\t:GlideRecord", "contents": "insert()"},
+		{"trigger": "isActionAborted\t:GlideRecord", "contents": "isActionAborted()"},
+		{"trigger": "isNewRecord\t:GlideRecord", "contents": "isNewRecord()"},
+		{"trigger": "isValid\t:GlideRecord", "contents": "isValid()"},
+		{"trigger": "isValidField\t:GlideRecord (columnName)", "contents": "isValidField(${1:String columnName})"},
+		{"trigger": "isValidRecord\t:GlideRecord", "contents": "isValidRecord()"},
+		{"trigger": "newRecord\t:GlideRecord", "contents": "newRecord()"},
+		{"trigger": "next\t:GlideRecord", "contents": "next()"},
+		{"trigger": "operation\t:GlideRecord", "contents": "operation()"},
+		{"trigger": "orderBy\t:GlideRecord (name)", "contents": "orderBy(${1:String name})"},
+		{"trigger": "orderByDesc\t:GlideRecord (name)", "contents": "orderByDesc(${1:String name})"},
+		{"trigger": "query\t:GlideRecord (field, value)", "contents": "query(${:Object field}, ${1:Object value})"},
+		{"trigger": "setAbortAction\t:GlideRecord (b)", "contents": "setAbortAction(${1:Boolean b})"},
+		{"trigger": "setLimit\t:GlideRecord (maxNumRecords)", "contents": "setLimit(${1:Number maxNumRecords})"},
+		{"trigger": "setNewGuidValue\t:GlideRecord (guid)", "contents": "setNewGuidValue(${1:String guid})"},
+		{"trigger": "setValue\t:GlideRecord (name value)", "contents": "setValue(${:String name}, ${1:Object value})"},
+		{"trigger": "setWorkflow\t:GlideRecord (enable)", "contents": "setWorkflow(${1:Boolean enable})"},
+		{"trigger": "update\t:GlideRecord (reason)", "contents": "update(${1:String reason})"},
+		{"trigger": "updateMultiple\t:GlideRecord", "contents": "updateMultiple()"},
+
+		/* GlideSchedule */
+
+		{"trigger": "GlideSchedule\t<GlideSchedule> (sysID, timeZone)", "contents": "GlideSchedule(${1:String sysID}, ${2:String timeZone})"},
+		{"trigger": "add\t:GlideSchedule (startDate, offSet)", "contents": "add(${1:GlideDateTime startDate}, ${2:GlideDuration offSet})"},
+		{"trigger": "duration\t:GlideSchedule (startDate, endDate)", "contents": "duration(${1:GlideDateTime startDate}, ${2:GlideDateTime endDate})"},
+		{"trigger": "getName\t:GlideSchedule", "contents": "getName()"},
+		{"trigger": "isInSchedule\t:GlideSchedule (time)", "contents": "isInSchedule(${1:GlideDateTime time})"},
+		{"trigger": "isValid\t:GlideSchedule", "contents": "isValid()"},
+		{"trigger": "load\t:GlideSchedule (sysID, timeZone, excludeSpanID)", "contents": "load(${1:String sysID}, ${2:String timeZone}, ${3:String excludeSpanID})"},
+		{"trigger": "setTimeZone\t:GlideSchedule (timeZone)", "contents": "setTimeZone(${1:String timeZone})"},
+		{"trigger": "whenNext\t:GlideSchedule (time, timeZone)", "contents": "whenNext(${1:GlideDateTime time}, ${2:String timeZone})"},
+
+		/* GlideScriptedProcessor */
+
+		{"trigger": "redirect\t:GlideScriptedProcessor (url)", "contents": "redirect(${1:String url})"},
+		{"trigger": "writeJSON\t:GlideScriptedProcessor (o)", "contents": "writeJSON(${1:Object o})"},
+		{"trigger": "writeOutput\t:GlideScriptedProcessor (contentType, s)", "contents": "writeOutput(${1:String contentType}, ${2:String s})"},
+		{"trigger": "writeOutput\t:GlideScriptedProcessor (s)", "contents": "writeOutput(${1:String s})"},
+
+		/* GlideServletRequest */
+
+		{"trigger": "getContentType\t:GlideServletRequest", "contents": "getContentType()"},
+		{"trigger": "getHeader\t:GlideServletRequest (name)", "contents": "getHeader(${1:String name})"},
+		{"trigger": "getHeaderNames\t:GlideServletRequest", "contents": "getHeaderNames()"},
+		{"trigger": "getHeaders\t:GlideServletRequest (name)", "contents": "getHeaders(${1:String name})"},
+		{"trigger": "getParameter\t:GlideServletRequest (name)", "contents": "getParameter(${1:String name})"},
+		{"trigger": "getParameterNames\t:GlideServletRequest", "contents": "getParameterNames()"},
+		{"trigger": "getQueryString\t:GlideServletRequest", "contents": "getQueryString()"},
+
+		/* GlideServletResponse */
+
+		{"trigger": "sendRedirect\t:GlideServletResponse (location)", "contents": "sendRedirect(${1:String location})"},
+		{"trigger": "setContentType\t:GlideServletResponse (type)", "contents": "setContentType(${1:String type})"},
+		{"trigger": "setHeader\t:GlideServletResponse (key, value)", "contents": "setHeader(${1:String key}, ${2:String value})"},
+		{"trigger": "setStatus\t:GlideServletResponse (status)", "contents": "setStatus(${1:Number status})"},
+
+		/* GlideSession */
+
+		{"trigger": "getClientData\t:GlideSession (paramName)", "contents": "getClientData(${1:String paramName})"},
+		{"trigger": "getClientIP\t:GlideSession", "contents": "getClientIP()"},
+		{"trigger": "getCurrentApplicationId\t:GlideSession", "contents": "getCurrentApplicationId()"},
+		{"trigger": "getLanguage\t:GlideSession", "contents": "getLanguage()"},
+		{"trigger": "getSession\t:GlideSession", "contents": "getSessionToken()"},
+		{"trigger": "getTimeZoneName\t:GlideSession", "contents": "getTimeZoneName()"},
+		{"trigger": "getUrlOnStack\t:GlideSession", "contents": "getUrlOnStack()"},
+		{"trigger": "isInteractive\t:GlideSession", "contents": "isInteractive()"},
+		{"trigger": "isLoggedIn\t:GlideSession", "contents": "isLoggedIn()"},
+		{"trigger": "putClientData\t:GlideSession (paramNamem paramValue)", "contents": "putClientData(${1:String paramName}, ${2:String paramValue})"},
+
+		/* GlideSystem */
+
+		{"trigger": "addErrorMessage\t:GlideSystem (message)", "contents": "addErrorMessage(${1:Object message})"},
+		{"trigger": "addInfoMessage\t:GlideSystem (message)", "contents": "addInfoMessage(${1:Object message})"},
+		{"trigger": "debug\t:GlideSystem (message, parm1, parm2, parm3, parm4, parm5)", "contents": "debug(${1:String message}, ${2:Object parm1}, ${3:Object parm2}, ${4:Object parm3}, ${5:Object parm4}, ${6:Object parm5})"},
+		{"trigger": "error\t:GlideSystem (message, parm1, parm2, parm3, parm4, parm5)", "contents": "error(${1:String message}, ${2:Object parm1}, ${3:Object parm2}, ${4:Object parm3}, ${5:Object parm4}, ${6:Object parm5})"},
+		{"trigger": "eventQueue\t:GlideSystem (name, instance, parm1, parm2, parm3)", "contents": "eventQueue(${1:String name}, ${2:Object instance}, ${3:String parm1}, ${4:String parm2}, ${5:String parm3})"},
+		{"trigger": "generateGUID\t:GlideSystem", "contents": "generateGUID()"},
+		{"trigger": "getCallerScopeName\t:GlideSystem", "contents": "getCallerScopeName()"},
+		{"trigger": "getCssCacheVersionString\t:GlideSystem", "contents": "getCssCacheVersionString()"},
+		{"trigger": "getCurrentApplicationId\t:GlideSystem", "contents": "getCurrentApplicationId()"},
+		{"trigger": "getCurrentScopeName\t:GlideSystem", "contents": "getCurrentScopeName()"},
+		{"trigger": "getMessage\t:GlideSystem (id, args)", "contents": "getMessage(${1:String id}, ${1:Object args})"},
+		{"trigger": "getProperty\t:GlideSystem (key, alt)", "contents": "getProperty(${1:String key}, ${1:Object alt})"},
+		{"trigger": "getSession\t:GlideSystem", "contents": "getSession()"},
+		{"trigger": "getSessionID\t:GlideSystem", "contents": "getSessionID()"},
+		{"trigger": "getSessionToken\t:GlideSystem", "contents": "getSessionToken()"},
+		{"trigger": "getTimeZoneName\t:GlideSystem", "contents": "getTimeZoneName()"},
+		{"trigger": "getUrlOnStack\t:GlideSystem", "contents": "getUrlOnStack()"},
+		{"trigger": "getUser\t:GlideSystem", "contents": "getUser()"},
+		{"trigger": "getUserDisplayName\t:GlideSystem", "contents": "getUserDisplayName()"},
+		{"trigger": "getUserID\t:GlideSystem", "contents": "getUserID()"},
+		{"trigger": "getUserName\t:GlideSystem", "contents": "getUserName()"},
+		{"trigger": "hasRole\t:GlideSystem (role)", "contents": "hasRole(${1:Object role})"},
+		{"trigger": "include\t:GlideSystem (name)", "contents": "include(${1:String name})"},
+		{"trigger": "info\t:GlideSystem (message, parm1, parm2, parm3, parm4, parm5)", "contents": "info(${1:String message}, ${2:Object parm1}, ${3:Object parm2}, ${4:Object parm3}, ${5:Object parm4}, ${6:Object parm5})"},
+		{"trigger": "isDebugging\t:GlideSystem", "contents": "isDebugging()"},
+		{"trigger": "isInteractive\t:GlideSystem", "contents": "isInteractive()"},
+		{"trigger": "isLoggedIn\t:GlideSystem", "contents": "isLoggedIn()"},
+		{"trigger": "nil\t:GlideSystem (o)", "contents": "nil(${1:Object o})"},
+		{"trigger": "setRedirect\t:GlideSystem (o)", "contents": "setRedirect(${1:Object o})"},
+		{"trigger": "tableExists\t:GlideSystem (name)", "contents": "tableExists(${1:String name})"},
+		{"trigger": "warn\t:GlideSystem (message, parm1, parm2, parm3, parm4, parm5)", "contents": "warn(${1:String message}, ${2:Object parm1}, ${3:Object parm2}, ${4:Object parm3}, ${5:Object parm4}, ${6:Object parm5})"},
+
+		/* GlideTableHierarchy */
+
+		{"trigger": "GlideTableHierarchy\t<GlideTableHierarchy> (tableName)", "contents": "GlideTableHierarchy(${1:String tableName})"},
+		{"trigger": "getAllExtensions\t:GlideTableHierarchy", "contents": "getAllExtensions()"},
+		{"trigger": "getBase\t:GlideTableHierarchy", "contents": "getBase()"},
+		{"trigger": "getHierarchy\t:GlideTableHierarchy", "contents": "getHierarchy()"},
+		{"trigger": "getName\t:GlideTableHierarchy", "contents": "getName()"},
+		{"trigger": "getRoot\t:GlideTableHierarchy", "contents": "getRoot()"},
+		{"trigger": "getTableExtensions\t:GlideTableHierarchy", "contents": "getTableExtensions()"},
+		{"trigger": "getTables\t:GlideTableHierarchy", "contents": "getTables()"},
+		{"trigger": "hasExtensions\t:GlideTableHierarchy", "contents": "hasExtensions()"},
+		{"trigger": "isBaseClass\t:GlideTableHierarchy", "contents": "isBaseClass()"},
+		{"trigger": "isSoloClass\t:GlideTableHierarchy", "contents": "isSoloClass()"},
+
+		/* GlideTime */
+
+		{"trigger": "GlideTime\t<GlideTime>", "contents": "GlideTime()"},
+		{"trigger": "GlideTime\t:GlideTime (milliseconds)", "contents": "GlideTime(${1:Number milliseconds})"},
+		{"trigger": "getByFormat\t:GlideTime (format)", "contents": "getByFormat(${1:String format})"},
+		{"trigger": "getDisplayValue\t:GlideTime", "contents": "getDisplayValue()"},
+		{"trigger": "getDisplayValueInternal\t:GlideTime", "contents": "getDisplayValueInternal()"},
+		{"trigger": "getValue\t:GlideTime", "contents": "getValue()"},
+		{"trigger": "setDisplayValue\t:GlideTime (asDisplayed)", "contents": "setDisplayValue(${1:String asDisplayed})"},
+		{"trigger": "setValue\t:GlideTime (o)", "contents": "setValue(${1:String o})"},
+		{"trigger": "subtract\t:GlideTime (startTime, endTime)", "contents": "subtract(${1:GlideTime startTime}, ${2:GlideTime endTime})"},
+
+		/* GlideURI */
+
+		{"trigger": "ScopedGlideURI\t:GlideURI", "contents": "ScopedGlideURI()"},
+		{"trigger": "get\t:GlideURI (name)", "contents": "get(${1:String name})"},
+		{"trigger": "getFileFromPath\t:GlideURI", "contents": "getFileFromPath()"},
+		{"trigger": "set\t:GlideURI (name, value)", "contents": "set(${1:String name}, ${2:String value})"},
+		{"trigger": "toString\t:GlideURI (path)", "contents": "toString(${1:String path})"},
+
+		/* GlideUser */
+
+		{"trigger": "getCompanyID\t:GlideUser", "contents": "getCompanyID()"},
+		{"trigger": "getDisplayName\t:GlideUser", "contents": "getDisplayName()"},
+		{"trigger": "getID\t:GlideUser", "contents": "getID()"},
+		{"trigger": "getName\t:GlideUser", "contents": "getName()"},
+		{"trigger": "getPreference\t:GlideUser (name)", "contents": "getPreference(${1:String name})"},
+		{"trigger": "hasRole\t:GlideUser (role)", "contents": "hasRole(${1:String role})"},
+		{"trigger": "isMemberOf\t:GlideUser (group)", "contents": "isMemberOf(${1:String group})"},
+		{"trigger": "savePreference\t:GlideUser (name, value)", "contents": "savePreference(${1:String name}, ${2:String value})"},
+
+		/* RESTMessageV2 */
+
+		{"trigger": "RESTMessageV2\t<RESTMessageV2>", "contents": "RESTMessageV2()"},
+		{"trigger": "RESTMessageV2\t:RESTMessageV2 (name, methodName)", "contents": "RESTMessageV2(${1:String name}, ${2:String methodName})"},
+		{"trigger": "execute\t:RESTMessageV2", "contents": "execute()"},
+		{"trigger": "executeAsync\t:RESTMessageV2", "contents": "executeAsync()"},
+		{"trigger": "getEndpoint\t:RESTMessageV2", "contents": "getEndpoint()"},
+		{"trigger": "getRequestBody\t:RESTMessageV2", "contents": "getRequestBody()"},
+		{"trigger": "getRequestHeader\t:RESTMessageV2 (headerName)", "contents": "getRequestHeader(${1:String headerName})"},
+		{"trigger": "getRequestHeaders\t:RESTMessageV2", "contents": "getRequestHeaders()"},
+		{"trigger": "setBasicAuth\t:RESTMessageV2 (userName, userPass)", "contents": "setBasicAuth(${1:String userName}, ${2:String userPass})"},
+		{"trigger": "setEccCorrelator\t:RESTMessageV2 (correlator)", "contents": "setEccCorrelator(${1:String correlator})"},
+		{"trigger": "setEccParameter\t:RESTMessageV2 (name, value)", "contents": "setEccParameter(${1:String name}, ${2:String value})"},
+		{"trigger": "setEndpoint\t:RESTMessageV2 (endpoint)", "contents": "setEndpoint(${1:String endpoint})"},
+		{"trigger": "setHttpMethod\t:RESTMessageV2 (method)", "contents": "setHttpMethod(${1:String method})"},
+		{"trigger": "setHttpTimeout\t:RESTMessageV2 (timeoutMs)", "contents": "setHttpTimeout(${1:Number timeoutMs})"},
+		{"trigger": "setMIDServer\t:RESTMessageV2 (midServer)", "contents": "setMIDServer(${1:String midServer})"},
+		{"trigger": "setMutualAuth\t:RESTMessageV2 (profileName)", "contents": "setMutualAuth(${1:String profileName})"},
+		{"trigger": "setQueryParameter\t:RESTMessageV2 (name, value)", "contents": "setQueryParameter(${1:String name}, ${2:String value})"},
+		{"trigger": "setRequestBody\t:RESTMessageV2 (body)", "contents": "setRequestBody(${1:String body})"},
+		{"trigger": "setRequestHeader\t:RESTMessageV2 (name, value)", "contents": "setRequestHeader(${1:String name}, ${2:String value})"},
+		{"trigger": "setStringParameter\t:RESTMessageV2 (name, value)", "contents": "setStringParameter(${1:String name}, ${2:String value})"},
+		{"trigger": "setStringParameterNoEscape\t:RESTMessageV2 (name, value)", "contents": "setStringParameterNoEscape(${1:String name}, ${2:String value})"},
+
+		/* RESTResponseV2 */
+
+		{"trigger": "getBody\t:RESTResponseV2", "contents": "getBody()"},
+		{"trigger": "getErrorCode\t:RESTResponseV2", "contents": "getErrorCode()"},
+		{"trigger": "getErrorMessage\t:RESTResponseV2", "contents": "getErrorMessage()"},
+		{"trigger": "getHeader\t:RESTResponseV2 (name)", "contents": "getHeader(${1:String name})"},
+		{"trigger": "getHeaders\t:RESTResponseV2", "contents": "getHeaders()"},
+		{"trigger": "getQueryString\t:RESTResponseV2", "contents": "getQueryString()"},
+		{"trigger": "getStatusCode\t:RESTResponseV2", "contents": "getStatusCode()"},
+		{"trigger": "haveError\t:RESTResponseV2", "contents": "haveError()"},
+		{"trigger": "waitForResponse\t:RESTResponseV2 (timeoutSecs)", "contents": "waitForResponse(${1:Number timeoutSecs})"},
+
+		/* SOAPMessageV2 */
+
+		{"trigger": "SOAPMessageV2\t<SOAPMessageV2>", "contents": "SOAPMessageV2()"},
+		{"trigger": "SOAPMessageV2\t:SOAPMessageV2 (soapMessage, soapFunction)", "contents": "SOAPMessageV2(${1:String soapMessage}, ${2:String soapFunction})"},
+		{"trigger": "execute\t:SOAPMessageV2", "contents": "execute()"},
+		{"trigger": "executeAsync\t:SOAPMessageV2", "contents": "executeAsync()"},
+		{"trigger": "getEndpoint\t:SOAPMessageV2", "contents": "getEndpoint()"},
+		{"trigger": "getRequestBody\t:SOAPMessageV2", "contents": "getRequestBody()"},
+		{"trigger": "getRequestHeader\t:SOAPMessageV2 (headerName)", "contents": "getRequestHeader(${1:String headerName})"},
+		{"trigger": "getRequestHeaders\t:SOAPMessageV2", "contents": "getRequestHeaders()"},
+		{"trigger": "setBasicAuth\t:SOAPMessageV2 (userName, userPass)", "contents": "setBasicAuth(${1:String userName}, ${2:String userPass})"},
+		{"trigger": "setEccCorrelator\t:SOAPMessageV2 (correlator)", "contents": "setEccCorrelator(${1:String correlator})"},
+		{"trigger": "setEccParameter\t:SOAPMessageV2 (name, value)", "contents": "setEccParameter(${1:String name}, ${2:String value})"},
+		{"trigger": "setEndpoint\t:SOAPMessageV2 (endpoint)", "contents": "setEndpoint(${1:String endpoint})"},
+		{"trigger": "setHttpTimeout\t:SOAPMessageV2 (timeoutMs)", "contents": "setHttpTimeout(${1:Number timeoutMs})"},
+		{"trigger": "setMIDServer\t:SOAPMessageV2 (midServerName)", "contents": "setMIDServer(${1:String midServerName})"},
+		{"trigger": "setMutualAuth\t:SOAPMessageV2 (profileName)", "contents": "setMutualAuth(${1:String profileName})"},
+		{"trigger": "setRequestBody\t:SOAPMessageV2 (requestBody)", "contents": "setRequestBody(${1:String requestBody})"},
+		{"trigger": "setRequestHeader\t:SOAPMessageV2 (headerName, headerValue)", "contents": "setRequestHeader(${1:String headerName}, ${2:String headerValue})"},
+		{"trigger": "setSOAPAction\t:SOAPMessageV2 (soapAction)", "contents": "setSOAPAction(${1:String soapAction})"},
+		{"trigger": "setStringParameter\t:SOAPMessageV2 (name, value)", "contents": "setStringParameter(${1:String name}, ${2:String value})"},
+		{"trigger": "setStringParameterNoEscape\t:SOAPMessageV2 (name, value)", "contents": "setStringParameterNoEscape(${1:String name}, ${2:String value})"},
+		{"trigger": "setWSSecurity\t:SOAPMessageV2 (keystoreId, keystoreAlias, keystorePassword, certificateId)", "contents": "setWSSecurity(${1:String keystoreId}, ${1:String keystoreAlias}, ${2:String keystorePassword}, ${3:String certificateId})"},
+
+		/* SOAPResponseV2 */
+
+		{"trigger": "getBody\t:SOAPResponseV2", "contents": "getBody()"},
+		{"trigger": "getErrorCode\t:SOAPResponseV2", "contents": "getErrorCode()"},
+		{"trigger": "getErrorMessage\t:SOAPResponseV2", "contents": "getErrorMessage()"},
+		{"trigger": "getHeader\t:SOAPResponseV2 (name)", "contents": "getHeader(${1:String name})"},
+		{"trigger": "getHeaders\t:SOAPResponseV2", "contents": "getHeaders()"},
+		{"trigger": "getStatusCode\t:SOAPResponseV2", "contents": "getStatusCode()"},
+		{"trigger": "haveError\t:SOAPResponseV2", "contents": "haveError()"},
+		{"trigger": "waitForResponse\t:SOAPResponseV2 (timeoutSecs)", "contents": "waitForResponse(${1:Number timeoutSecs})"},
+
+		/* XMLDocument2 */
+
+		{"trigger": "XMLDocument2\t<XMLDocument2>", "contents": "XMLDocument2()"},
+		{"trigger": "createElement\t:XMLDocument2 (name)", "contents": "createElement(${1:String name})"},
+		{"trigger": "createElementWithTextValue\t:XMLDocument2 (name, value)", "contents": "createElementWithTextValue(${1:String name}, ${2:String value})"},
+		{"trigger": "getDocumentElement\t:XMLDocument2", "contents": "getDocumentElement()"},
+		{"trigger": "getFirstNode\t:XMLDocument2 (xPath)", "contents": "getFirstNode(${1:String xPath})"},
+		{"trigger": "getNextNode\t:XMLDocument2 (current)", "contents": "getNextNode(${1:Object current})"},
+		{"trigger": "getNode\t:XMLDocument2 (xPath)", "contents": "getNode(${1:String xPath})"},
+		{"trigger": "getNodeText\t:XMLDocument2 (xPath)", "contents": "getNodeText(${1:String xPath})"},
+		{"trigger": "parseXML\t:XMLDocument2 (xmlDoc)", "contents": "parseXML(${1:String xmlDoc})"},
+		{"trigger": "setCurrentElement\t:XMLDocument2 (element)", "contents": "setCurrentElement(${1:XMLNode element})"},
+		{"trigger": "toString\t:XMLDocument2", "contents": "toString()"},
+
+		/* XMLNode */
+
+		{"trigger": "getAttribute\t:XMLNode (attribute)", "contents": "getAttribute(${1:String attribute})"},
+		{"trigger": "getChildNodeIterator\t:XMLNode", "contents": "getChildNodeIterator()"},
+		{"trigger": "getFirstChild\t:XMLNode", "contents": "getFirstChild()"},
+		{"trigger": "getLastChild\t:XMLNode", "contents": "getLastChild()"},
+		{"trigger": "getNodeName\t:XMLNode", "contents": "getNodeName()"},
+		{"trigger": "getNodeValue\t:XMLNode", "contents": "getNodeValue()"},
+		{"trigger": "getTextContent\t:XMLNode", "contents": "getTextContent()"},
+		{"trigger": "hasAttribute\t:XMLNode (attribute)", "contents": "hasAttribute(${1:String attribute})"},
+		{"trigger": "toString\t:XMLNode", "contents": "toString()"},
+
+		/* XMLNodeIterator */
+
+		{"trigger": "hasNext\t:XMLNodeIterator", "contents": "hasNext()"},
+		{"trigger": "next\t:XMLNodeIterator", "contents": "next()"}
+
+	]
+}
