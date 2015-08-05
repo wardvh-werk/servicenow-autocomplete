@@ -1,0 +1,17 @@
+{
+	"name": "ServiceNow API Autocomplete",
+	"description": "JavaScript autocompletion for ServiceNow API",
+	"license": "MIT",
+	"version": "1.0.0",
+	"details": "https://github.com/dancigrang/servicenow-autocomplete",
+	"author": "Daniel Cigrang",
+	"readme": "https://raw.githubusercontent.com/dancigrang/servicenow-autocomplete/master/README.md",
+	"issues": "https://github.com/dancigrang/servicenow-autocomplete/issues",
+	"labels": ["autocomplete", "snippets"],
+	"releases": [
+		{
+			"sublime_text": "*",
+			"tags": true
+		}
+	]
+}
