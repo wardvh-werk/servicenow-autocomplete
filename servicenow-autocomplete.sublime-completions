@@ -176,7 +176,7 @@
 
 		/* GlideRecord */
 
-		{"trigger": "GlideRecord\t<GlideRecord>", "contents": "GlideRecord(${String tableName});"},
+		{"trigger": "GlideRecord\t<GlideRecord>", "contents": "GlideRecord(${1:String tableName});"},
 		{"trigger": "addEncodedQuery\t:GlideRecord (query)", "contents": "addEncodedQuery(${1:String query})"},
 		{"trigger": "addJoinQuery\t:GlideRecord (joinTable, primaryField, joinTableField)", "contents": "addJoinQuery(${1:String joinTable}, ${2:Object primaryField}, ${3:Object joinTableField})"},
 		{"trigger": "addNotNullQuery\t:GlideRecord (fieldName)", "contents": "addNotNullQuery(${1:String fieldName})"},
